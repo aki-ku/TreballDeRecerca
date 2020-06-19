@@ -8,7 +8,7 @@ c = float(input("valor c: "))
 
 if ((b**2 - 4*a*c)< 0):
   print("A continuació la solució en els nombres imaginaris")
-  print (-b+ (math.sqrt(b**2 - (4*a*c)) * math.sqrt(-1))/(2*a)
+  print (-b+ (math.sqrt(b**2 - (4*a*c)) * math.sqrt(-1))/(2*a))
 
 else:
   print("A continuació la solució en nombres reals")
