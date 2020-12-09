@@ -11,5 +11,5 @@ if ((b**2 - 4*a*c)< 0):
 
 else:
     print("A continuació la solució")
-    print (-b+ math.sqrt(b**2 - (4*a*c)))/(2*a)
-    print (-b- math.sqrt(b**2 - (4*a*c)))/(2*a)
+    print ((-b+ math.sqrt(b**2 - (4*a*c)))/(2*a))
+    print ((-b- math.sqrt(b**2 - (4*a*c)))/(2*a))

@@ -1,7 +1,5 @@
 numero = input("Dona quatre números diferents: ")
-#To do Hola Jianjing, volia que fessis un parell de coses. D'una banda has de trobar tu la # constant, es a dir, el bucle s'acaba quan es torna a repetir el nombre del pas anterior, 
-# tu suposes que ja la coneixes, i es tracta de que la trobis. D'altra banda m'agrdaria que
-# comentis els diferents pasos explicant que fas. 
+
 resposta = 0
 
 while(resposta != 6174):
@@ -38,3 +36,4 @@ while(resposta != 6174):
   numero = str(resultat)
 
   resposta = resultat 
+  ##
