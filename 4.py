@@ -1,39 +1,14 @@
-numero = input("Dona quatre números diferents: ")
-
-resposta = 0
-
-while(resposta != 6174):
-  
-  llistes = []
-  llistes2 = []
-  gran = ""
-  petit = ""
-
-  cont = 0
-
-  for i in numero:
-    print(i)
-    llistes.append((i))
-    llistes2.append((i))
-    cont = cont + 1
-  
-  if cont != 4:
-    llistes.append("0")
-    llistes2.append("0")
-
-  for i in range(4):
-    gran = gran + max(llistes)
-    llistes.remove(max(llistes))
-
-  for i in range(4):
-    petit = petit + min(llistes2)
-    llistes2.remove(min(llistes2))
-
-  resultat = int(gran) - int(petit)
-
-  print(gran, "-", petit, "=", resultat)
-
-  numero = str(resultat)
-
-  resposta = resultat 
-  ##
+import math
+opcio = input("Digues si vols buscar la hipotenusa pulsa 0 o catet pulsa 1: ")
+if opcio == "0":
+  c1 = int(input("Catet 1 : "))
+  c2 = int(input("Catet 2 : "))
+  c = c1 **2 + c2 **2
+  h = math.sqrt(c)
+  print("La hipotenusa és " , h)
+else:
+  h = int(input("Hipotenusa: "))
+  c1 = int(input("Catet 1 : "))
+  c2 = h **2 - c1 **2
+  c = math.sqrt(c2)
+  print("El catet és " , c)
